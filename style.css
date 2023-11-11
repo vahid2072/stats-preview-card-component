@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  --Soft-violet: hsl(277, 64%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-dark-blue);
+}
+
+.card {
+  width: 375px;
+  height: 700px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  background-image: url(./images/image-header-mobile.jpg);
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 40%;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--Soft-violet);
+  background-blend-mode: multiply;
+  border-radius: 5% 5% 0 0;
+}
+
+.container {
+  background-color: var(--Dark-desaturated-blue);
+  width: 90%;
+  height: 60%;
+  border-radius: 0% 0% 5% 5%;
+  padding: 30px 50px;
+}
+
+.text-center-align {
+  text-align: center;
+}
+
+.second-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: var(--White);
+  margin-bottom: 10px;
+}
+
+h1 span {
+  color: var(--Soft-violet)
+}
+
+p {
+  color: var(--Slightly-transparent-white2);
+  line-height: 1.4rem;
+}
+
+.second-container p {
+  line-height: normal;
+}
+
+h3 {
+  color: var(--Slightly-transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .card {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image-container {
+    background-image: url(./images/image-header-desktop.jpg);
+    width: 45%;
+    height: 100%;
+    border-radius: 0 5% 5% 0;
+  }
+
+  .container {
+    width: 45%;
+    height: 100%;
+    border-radius: 5% 0 0 5%;
+  }
+
+  .text-center-align {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  .second-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info {
+    margin-right: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 700px;
+    height: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image-container {
+    background-image: url(./images/image-header-desktop.jpg);
+    width: 45%;
+    height: 100%;
+    border-radius: 0 5% 5% 0;
+  }
+
+  .container {
+    width: 45%;
+    height: 100%;
+    border-radius: 5% 0 0 5%;
+  }
+
+  .text-center-align {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  .second-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info {
+    margin-right: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card {
+    width: 900px;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image-container {
+    background-image: url(./images/image-header-desktop.jpg);
+    width: 45%;
+    height: 100%;
+    border-radius: 0 5% 5% 0;
+  }
+
+  .container {
+    width: 45%;
+    height: 100%;
+    border-radius: 5% 0 0 5%;
+  }
+
+  .text-center-align {
+    text-align: left;
+  }
+
+  h1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .second-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+
+  .info {
+    margin-right: 10px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 1100px;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image-container {
+    background-image: url(./images/image-header-desktop.jpg);
+    width: 45%;
+    height: 100%;
+    border-radius: 0 5% 5% 0;
+  }
+
+  .container {
+    width: 45%;
+    height: 100%;
+    border-radius: 5% 0 0 5%;
+  }
+
+  .text-center-align {
+    text-align: left;
+  }
+
+  h1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .second-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+
+  .info {
+    margin-right: 50px;
+  }
+}
